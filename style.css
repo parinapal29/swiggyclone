@@ -1,0 +1,330 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 8%;
+    background-color: orangered;
+}
+
+.navbar img {
+    width: 180px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+.menu h3{
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+}
+.menu button{
+    padding:15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius:15px;
+    
+}
+.app{
+    background:transparent;
+    border:1px solid white;
+    color:white;
+}
+.signin{
+    background:black;
+    color:white;
+    border:none;
+}
+.search{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:30px;
+    background-color: orangered;
+}
+.search input{
+    width:350px;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid grey;
+    font-size:16px;
+    font-weight: bold;
+    cursor:pointer;
+
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:30px 2%;
+     background-color: orangered;
+}
+.card img{
+    width:100%;
+}
+.food-section {
+    padding: 30px 9%;
+}
+
+.food-section h2 {
+    font-size: 28px;
+    margin-bottom: 60px;
+}
+.food-items {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px 20px;
+    text-align: center;
+}
+
+.food-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.food-item p {
+    font-size: 25px;
+    margin-top: 10px;
+}
+.instamart-section {
+    padding: 40px 9%;
+}
+
+.instamart-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.grocery-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.grocery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.grocery-item p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+.city-section {
+    padding: 40px 9%;
+}
+
+.city-section h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.cities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.city {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.app-banner {
+    padding: 30px 9%;
+    text-align: center;
+}
+
+.app-banner img {
+    width: 100%;
+    height: auto;
+}
+.footer {
+    background-color: #f0f0f0;
+    padding: 50px 9%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer-column p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar img {
+        width: 130px;
+    }
+
+    .menu {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .menu h3 {
+        font-size: 12px;
+    }
+
+    .menu button {
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+
+    /* Search */
+    .search {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .search input {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+
+    /* Cards */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    /* Food section */
+    .food-section {
+        padding: 25px 15px;
+    }
+
+    .food-section h2 {
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .food-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px 10px;
+    }
+
+    .food-item img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .food-item p {
+        font-size: 15px;
+    }
+
+    /* Instamart */
+    .instamart-section {
+        padding: 25px 15px;
+    }
+
+    .instamart-section h2 {
+        font-size: 22px;
+    }
+
+    .grocery-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 10px;
+    }
+
+    .grocery-item img {
+        width: 100%;
+        height: 120px;
+    }
+
+    .grocery-item p {
+        font-size: 14px;
+    }
+
+    /* App banner */
+    .app-banner {
+        padding: 20px 10px;
+    }
+
+    .app-banner img {
+        width: 100%;
+    }
+
+    /* Cities */
+    .city-section {
+        padding: 25px 15px;
+    }
+
+    .city-section h2 {
+        font-size: 22px;
+    }
+
+    .cities {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .city {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 20px;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 45%;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .footer-column p {
+        font-size: 13px;
+    }
+
+}
+
